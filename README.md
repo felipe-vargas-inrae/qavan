@@ -3,7 +3,7 @@
 ## Description
 QAVAN is a query-answering approach to perform mathematical formulas on demand over Knowledge Graph (KG) data on based Semantic Web technologies. QAVAN exploit the Advanced Features of the W3C recommendation SHACL to that goal. This approach is able to compute only the mathematical formulas for the specific instances involve in a query. Thus, avoiding the problems in disk space and memory that could produce a full materialisation.
 
-## Input parameters
+## Input parameters
 QAVAN program takes as inputs:
 
 * --conf: A valid JSON with the execution information details below
@@ -11,7 +11,7 @@ QAVAN program takes as inputs:
 * --inferences: A flag to indicate RDFS entailment should be taken into account for inferences 
 * --unzip: A flag to indicate that the inference should be compressed, useful for big datasets 
 
-### The config JSON file should contain the following values:
+### The config JSON file should contain the following values:
 ```javascript
 {
   "experimentName": "Dependency ANRs Cities",
@@ -26,12 +26,10 @@ QAVAN program takes as inputs:
 }
 ```
 
-## Running QAVAN in the command line
+## Running QAVAN in the command line
 ```
 java  -jar QAVAN-1.0-SNAPSHOT.jar --config "myconf.json" 
-
 ```
-
 ## Outputs 
 QAVAN provide three outputs:
 * an inference graph in format RDF Turtle
@@ -48,7 +46,7 @@ This repository contains two folders:
 * DBPedia folder
 Each folder contains an example of how to run it.
 
-## Used technologies
+## Used technologies
 * Apache Jena version 4.3.2
 * SHACL-API version 1.4.2
 
